@@ -1,3 +1,14 @@
+use clap::Parser;
+use cli::Cli;
+
+mod cli;
+mod root;
+
 fn main() {
-    println!("Hello, world!");
+    let cli = Cli::parse();
+
+    match cli.command {
+        Some(cli::Command::List) => println!("List!"),
+        None => root::run(),
+    }
 }
