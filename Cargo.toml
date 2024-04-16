@@ -9,5 +9,5 @@ authors = ["Niels Mentink <niels@ment.ink>"]
 [dependencies]
 clap = { version = "4.4.7", features = ["derive"] }
 serde = { version = "1.0.189", features = ["derive"] }
-serde_json = "1.0.107"
+serde_json = "1.0.116"
 subprocess = "0.2.9"
